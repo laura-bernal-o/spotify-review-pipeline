@@ -146,7 +146,9 @@ function md(text) {  // tiny, escape-first markdown: headings, bullets, bold
 }
 
 function hbars(el, rows, { label, value, tipHtml, onClick, width = 1040 }) {
-  const rowH = 26, left = Math.min(260, width * 0.36), right = 56, h = rows.length * rowH + 24;
+  const rowH = 26, left = Math.min(330, width * 0.42), right = 56, h = rows.length * rowH + 24;
+  const maxChars = Math.floor((left - 12) / 6.6);
+  const clip = (t) => (t.length > maxChars ? t.slice(0, maxChars - 1) + "…" : t);
   const max = Math.max(...rows.map(value), 1), w = width - left - right;
   const ticks = [0, 0.25, 0.5, 0.75, 1].map((t) => Math.round(max * t));
   let s = `<svg viewBox="0 0 ${width} ${h}" width="100%" role="img" aria-label="bar chart"><g class="grid">`;
@@ -154,7 +156,7 @@ function hbars(el, rows, { label, value, tipHtml, onClick, width = 1040 }) {
   s += "</g>";
   rows.forEach((r, i) => {
     const y = i * rowH + 4, bw = Math.max(2, (value(r) / max) * w);
-    s += `<text x="${left - 8}" y="${y + 15}" text-anchor="end">${esc(label(r))}</text>`;
+    s += `<text x="${left - 8}" y="${y + 15}" text-anchor="end"><title>${esc(label(r))}</title>${esc(clip(label(r)))}</text>`;
     s += `<rect class="bar" data-i="${i}" x="${left}" y="${y + 3}" width="${bw}" height="${rowH - 10}" rx="3"/>`;
     s += `<rect data-i="${i}" x="0" y="${y}" width="${width}" height="${rowH}" fill="transparent" style="cursor:${onClick ? "pointer" : "default"}"/>`;
     s += `<text x="${left + bw + 6}" y="${y + 15}">${fmt(value(r))}</text>`;
@@ -175,7 +177,9 @@ function line(el, rows, width = 520) {
   let s = `<svg viewBox="0 0 ${width} ${h}" width="100%" role="img" aria-label="complaint share by month"><g class="grid">`;
   for (const f of [0, 0.25, 0.5, 0.75, 1]) { const v = max * f; s += `<line x1="${l}" x2="${width - r}" y1="${y(v)}" y2="${y(v)}"/><text x="${l - 6}" y="${y(v) + 4}" text-anchor="end">${Math.round(v * 100)}%</text>`; }
   s += "</g>";
-  rows.forEach((m, i) => { if (i % 3 === 0 || i === rows.length - 1) s += `<text x="${x(i)}" y="${h - 8}" text-anchor="middle">${esc(m.month)}</text>`; });
+  rows.forEach((m, i) => { if (i % 3 === 0 || i === rows.length - 1) {
+    const anchor = i === 0 ? "start" : i === rows.length - 1 ? "end" : "middle";
+    s += `<text x="${x(i)}" y="${h - 8}" text-anchor="${anchor}">${esc(m.month)}</text>`; } });
   s += `<path class="line" d="${rows.map((m, i) => (i ? "L" : "M") + x(i) + " " + y(vals[i])).join(" ")}"/>`;
   rows.forEach((m, i) => { s += `<circle class="dot" cx="${x(i)}" cy="${y(vals[i])}" r="4"/><rect data-i="${i}" x="${x(i) - w / rows.length / 2}" y="${t}" width="${w / rows.length}" height="${ih}" fill="transparent"/>`; });
   el.innerHTML = s + "</svg>";
@@ -224,7 +228,8 @@ async function trace(id) {
     const tiles = [
       [fmt(m.source_rows), "source reviews accounted for"],
       [fmt(m.classified_in_scope), "classified (declared scope)"],
-      [fmt(m["status.quarantined"] || 0), "quarantined (empty text or out of scope)"],
+      [fmt(m["status.pending"] || 0), "not classified (outside the declared 100k scope; quarantined in the export)"],
+      [fmt(m["status.quarantined"] || 0), "empty texts quarantined"],
       [fmt(complaints), "complaints + cancellations"],
       [fmt(m.needs_review), "flagged needs-review"],
       [v.topic_agreement != null ? Math.round(v.topic_agreement * 100) + "%" : "—", `verifier topic agreement (n=${v.sample_size ?? "—"})`],

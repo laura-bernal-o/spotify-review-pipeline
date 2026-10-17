@@ -9,3 +9,6 @@ data/work/
 *.db-wal
 *.db-shm
 .DS_Store
+dashboard/node_modules/
+dashboard/.vercel/
+.vercel/
