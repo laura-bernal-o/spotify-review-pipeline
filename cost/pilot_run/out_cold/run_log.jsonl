@@ -1,0 +1,12 @@
+{"t": 1792203467.918, "run_id": "pilot-cold", "stage": "prepare", "event": "start"}
+{"t": 1792203467.924, "run_id": "pilot-cold", "stage": "prepare", "event": "end", "seconds": 0.007, "result": {"records": 100, "unique_review_ids": 100, "duplicate_review_ids": 0, "empty_review_text": 0, "nonempty_review_text": 100, "distinct_nonempty_texts": 100, "exact_duplicate_text_rows": 0, "missing_app_version": 18, "golden_ids_in_file": 0}}
+{"t": 1792203467.924, "run_id": "pilot-cold", "stage": "enrich", "event": "start"}
+{"t": 1792203479.907, "run_id": "pilot-cold", "stage": "enrich", "event": "end", "seconds": 11.982, "result": {"executed": true, "phase": "initial", "texts_completed": 100, "texts_failed": 0, "stopped": null, "wall_seconds": 11.78, "run_spend_usd": 0.003313254000000003}}
+{"t": 1792203479.908, "run_id": "pilot-cold", "stage": "verify", "event": "start"}
+{"t": 1792203488.686, "run_id": "pilot-cold", "stage": "verify", "event": "end", "seconds": 8.778, "result": {"executed": true, "stopped": null, "run_spend_usd": 0.006776, "sample_size": 20, "topic_agreement": 0.95, "intent_agreement": 1.0, "severity_exact_agreement": 0.95, "severity_mae": 0.05}}
+{"t": 1792203488.686, "run_id": "pilot-cold", "stage": "group", "event": "start"}
+{"t": 1792203497.967, "run_id": "pilot-cold", "stage": "group", "event": "end", "seconds": 9.281, "result": {"memberships": 51, "issues": 19, "named_by_model": true}}
+{"t": 1792203497.967, "run_id": "pilot-cold", "stage": "rank", "event": "start"}
+{"t": 1792203497.971, "run_id": "pilot-cold", "stage": "rank", "event": "end", "seconds": 0.004, "result": 19}
+{"t": 1792203497.972, "run_id": "pilot-cold", "stage": "memo", "event": "start"}
+{"t": 1792203517.414, "run_id": "pilot-cold", "stage": "memo", "event": "end", "seconds": 19.442, "result": {"executed": true, "recommended_area": "usability", "claims": 11}}

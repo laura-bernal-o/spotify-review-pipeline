@@ -1,0 +1,43 @@
+{
+  "cited_review_ids": [
+    "45c561b9-cc47-4d80-95d3-f0d20bc84af3",
+    "9e5f9745-f8be-48d3-b9de-4d118507d94a",
+    "5c9c17d3-9d6a-4fa1-a2a4-ae98eefbbd25",
+    "89ea2c30-db8b-459d-8ab7-bbcb7f92c774",
+    "d146397f-4a94-4980-be00-ae9212eca3a7"
+  ],
+  "model": "claude-haiku-4-5",
+  "recommendations": [
+    {
+      "claim_ids": [
+        "C1",
+        "C1b",
+        "C1c",
+        "C2",
+        "C2b",
+        "C3",
+        "C3b"
+      ],
+      "rationale": "The Q-recent update introduced functionality breaks in repeat/skip, queue management, and playlist control. Six complaints with high mean severity (3.33) and explicit cancellation intent signal urgent user frustration. Rolling back or rapidly iterating on this change will address 14 of 17 usability complaints and prevent churn.",
+      "title": "Revert or Fix Recent Update Usability Regressions"
+    },
+    {
+      "claim_ids": [
+        "C5",
+        "C5b"
+      ],
+      "rationale": "Users report that the update now restricts basic features (song selection, skip limit) behind premium, perceived as artificial gatekeeping. This intertwines usability and billing friction, driving both complaint volume and cancellation intent. Clarify or adjust restrictions to separate genuine premium value from perceived regressions.",
+      "title": "Audit Premium Paywall Restrictions Introduced by Update"
+    },
+    {
+      "claim_ids": [
+        "C4",
+        "C4b"
+      ],
+      "rationale": "Playback issues (3 complaints, mean severity 3.67) involve Google Assistant integration and mid-song stopping. Some may be user-environment-specific, but validate these are not exacerbated by the recent update during the usability fix.",
+      "title": "Monitor Playback Reliability in Resolution"
+    }
+  ],
+  "recommended_area": "usability",
+  "request_id": "req_011Cg71NTkHAB7yG8yRm7C9t"
+}

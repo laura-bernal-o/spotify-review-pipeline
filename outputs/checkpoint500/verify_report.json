@@ -1,0 +1,49 @@
+{
+  "disagreements": [
+    {
+      "enricher": [
+        "other",
+        "complaint",
+        2
+      ],
+      "review_id": "d27e9b26-a7af-469c-9a4e-8deea2db72ae",
+      "text": "Great place for music. Bad for smaller artists and a platform for idiots like Joe Rogan and Steven Crowder to spread their stupidity.",
+      "verifier": [
+        "catalog",
+        "complaint",
+        2
+      ]
+    },
+    {
+      "enricher": [
+        "access",
+        "praise",
+        1
+      ],
+      "review_id": "3e0f6d1b-8d2f-42e0-8ce1-021fe544b585",
+      "text": "still my fave app since yr2019 up to 2023. easy access to both new and old songs. music is life!😊💟- this is currently my fave app! keeps me updated on latest songs.",
+      "verifier": [
+        "catalog",
+        "praise",
+        1
+      ]
+    }
+  ],
+  "intent_agreement": 1.0,
+  "model": "claude-haiku-4-5",
+  "prompt_version": "verify-v1",
+  "sample_fraction_declared": 0.01,
+  "sample_size": 20,
+  "severity_exact_agreement": 0.95,
+  "severity_mae": 0.05,
+  "topic_agreement": 0.9,
+  "topic_confusion_enricher_vs_verifier": {
+    "access->access": 1,
+    "access->catalog": 1,
+    "billing->billing": 2,
+    "other->catalog": 1,
+    "other->other": 13,
+    "playback->playback": 1,
+    "usability->usability": 1
+  }
+}

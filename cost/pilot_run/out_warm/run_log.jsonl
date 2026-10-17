@@ -1,0 +1,10 @@
+{"t": 1792203517.648, "run_id": "pilot-warm", "stage": "enrich", "event": "start"}
+{"t": 1792203517.891, "run_id": "pilot-warm", "stage": "enrich", "event": "end", "seconds": 0.243, "result": {"executed": true, "phase": "resume", "texts_completed": 0, "texts_failed": 0, "stopped": null, "wall_seconds": 0.0, "run_spend_usd": 0.0}}
+{"t": 1792203517.891, "run_id": "pilot-warm", "stage": "verify", "event": "start"}
+{"t": 1792203517.892, "run_id": "pilot-warm", "stage": "verify", "event": "end", "seconds": 0.001, "result": {"executed": true, "stopped": null, "run_spend_usd": 0.0, "sample_size": 20, "topic_agreement": 0.95, "intent_agreement": 1.0, "severity_exact_agreement": 0.95, "severity_mae": 0.05}}
+{"t": 1792203517.893, "run_id": "pilot-warm", "stage": "group", "event": "start"}
+{"t": 1792203518.694, "run_id": "pilot-warm", "stage": "group", "event": "end", "seconds": 0.801, "result": {"memberships": 51, "issues": 19, "named_by_model": true}}
+{"t": 1792203518.694, "run_id": "pilot-warm", "stage": "rank", "event": "start"}
+{"t": 1792203518.695, "run_id": "pilot-warm", "stage": "rank", "event": "end", "seconds": 0.001, "result": 19}
+{"t": 1792203518.695, "run_id": "pilot-warm", "stage": "memo", "event": "start"}
+{"t": 1792203518.698, "run_id": "pilot-warm", "stage": "memo", "event": "end", "seconds": 0.002, "result": {"executed": true, "recommended_area": "usability", "claims": 11}}

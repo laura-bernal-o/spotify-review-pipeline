@@ -1,0 +1,18 @@
+{
+  "_note": "Editable projection assumptions. Measured pilot results never change when these change.",
+  "spending_limit_usd": 10.0,
+  "max_workers": 1,
+  "output_token_cap": {"enrich": null, "verify": 4000, "group": 4000, "memo": 8000},
+  "fallback_fraction_max": 0.0,
+  "fallback_note": "No stronger-model fallback is used; failed records are quarantined, not escalated.",
+  "verify_fraction": 0.01,
+  "targets": {
+    "declared_scope_100k": {"rows": 660622, "classified": 100000, "distinct_texts": 78099, "quarantined": 560622},
+    "full_corpus": {"rows": 660622, "classified": 660609, "distinct_texts": 484189, "quarantined": 13}
+  },
+  "scenarios": {
+    "base": {"retry_rate": "measured", "verify_multiplier": 1.0, "fixed_stage_multiplier": 1.0, "throughput_multiplier": 1.0},
+    "conservative": {"retry_rate_add": 0.10, "verify_multiplier": 2.0, "fixed_stage_multiplier": 3.0, "throughput_multiplier": 0.5}
+  },
+  "local_compute": {"status": "unknown", "note": "Runs on a personal laptop; electricity/hardware not metered. Reported as unknown, not zero."}
+}

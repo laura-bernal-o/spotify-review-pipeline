@@ -1,0 +1,213 @@
+{
+ "overall_metrics": {
+  "classified_in_scope": "500",
+  "intent.cancellation": "26",
+  "intent.complaint": "212",
+  "intent.praise": "212",
+  "intent.request": "15",
+  "intent.unclear": "35",
+  "needs_review": "85",
+  "source_rows": "500",
+  "status.completed": "500",
+  "topic.access.complaint_count": "8",
+  "topic.access.mean_severity": "4.000000",
+  "topic.access.severity_sum": "32",
+  "topic.billing.complaint_count": "36",
+  "topic.billing.mean_severity": "2.944444",
+  "topic.billing.severity_sum": "106",
+  "topic.catalog.complaint_count": "17",
+  "topic.catalog.mean_severity": "2.588235",
+  "topic.catalog.severity_sum": "44",
+  "topic.downloads.complaint_count": "8",
+  "topic.downloads.mean_severity": "3.375000",
+  "topic.downloads.severity_sum": "27",
+  "topic.other.complaint_count": "66",
+  "topic.other.mean_severity": "1.939394",
+  "topic.other.severity_sum": "128",
+  "topic.playback.complaint_count": "38",
+  "topic.playback.mean_severity": "3.657895",
+  "topic.playback.severity_sum": "139",
+  "topic.usability.complaint_count": "65",
+  "topic.usability.mean_severity": "2.830769",
+  "topic.usability.severity_sum": "184"
+ },
+ "ranking_top": [
+  {
+   "rank": "1",
+   "issue_id": "other.general",
+   "complaint_count": "66",
+   "severity_sum": "128",
+   "mean_severity": "1.939394",
+   "priority_score": "128",
+   "name": "General App Problems"
+  },
+  {
+   "rank": "2",
+   "issue_id": "billing.premium_paywall",
+   "complaint_count": "23",
+   "severity_sum": "70",
+   "mean_severity": "3.043478",
+   "priority_score": "70",
+   "name": "Premium Paywall Everywhere"
+  },
+  {
+   "rank": "3",
+   "issue_id": "playback.general",
+   "complaint_count": "18",
+   "severity_sum": "67",
+   "mean_severity": "3.722222",
+   "priority_score": "67",
+   "name": "General Playback Failures"
+  },
+  {
+   "rank": "4",
+   "issue_id": "usability.ads",
+   "complaint_count": "22",
+   "severity_sum": "56",
+   "mean_severity": "2.545455",
+   "priority_score": "56",
+   "name": "Excessive Ads Block Free Use"
+  },
+  {
+   "rank": "5",
+   "issue_id": "usability.update_redesign",
+   "complaint_count": "14",
+   "severity_sum": "43",
+   "mean_severity": "3.071429",
+   "priority_score": "43",
+   "name": "Recent Update Made App Worse"
+  },
+  {
+   "rank": "6",
+   "issue_id": "usability.general",
+   "complaint_count": "15",
+   "severity_sum": "40",
+   "mean_severity": "2.666667",
+   "priority_score": "40",
+   "name": "Navigation and UI Issues"
+  },
+  {
+   "rank": "7",
+   "issue_id": "playback.connectivity",
+   "complaint_count": "10",
+   "severity_sum": "35",
+   "mean_severity": "3.500000",
+   "priority_score": "35",
+   "name": "Playback Connectivity Errors"
+  },
+  {
+   "rank": "8",
+   "issue_id": "usability.queue_playlist",
+   "complaint_count": "9",
+   "severity_sum": "29",
+   "mean_severity": "3.222222",
+   "priority_score": "29",
+   "name": "Cannot Control Playlist Selection"
+  },
+  {
+   "rank": "9",
+   "issue_id": "billing.charges",
+   "complaint_count": "7",
+   "severity_sum": "20",
+   "mean_severity": "2.857143",
+   "priority_score": "20",
+   "name": "Excessive Paid Feature Restrictions"
+  },
+  {
+   "rank": "10",
+   "issue_id": "catalog.lyrics",
+   "complaint_count": "7",
+   "severity_sum": "20",
+   "mean_severity": "2.857143",
+   "priority_score": "20",
+   "name": "Song Lyrics Loading Failures"
+  }
+ ],
+ "evidence_pack": {
+  "other.general": [
+   {
+    "quote": "Apps automatically starts even after you have disabled all permissions.",
+    "review_id": "8cd35162-9223-42d1-8097-06e22fde94ea",
+    "severity": 3
+   },
+   {
+    "quote": "New update had made this app worst for streaming music. Shifting to better apps",
+    "review_id": "a598cfe0-473b-4665-9eb2-4eebb3c1d877",
+    "severity": 3
+   },
+   {
+    "quote": "Worst",
+    "review_id": "00363dc8-2117-4565-9af9-efadf8fa90cf",
+    "severity": 2
+   }
+  ],
+  "billing.premium_paywall": [
+   {
+    "quote": "It is absolutely useless after the latest update. There's nothing I can do without the \"try premium\" option popping up every damn time.",
+    "review_id": "2313bd8e-43bd-4777-bff9-3ae753288f0e",
+    "severity": 4
+   },
+   {
+    "quote": "Canvas not available after recent update, what's the point of having premium -______-",
+    "review_id": "384008ad-eb79-4525-a794-b0b67f7fb3f5",
+    "severity": 4
+   },
+   {
+    "quote": "It's need to skip any song without premium pack, and when I wanna purchase subscription it's show me a blank page",
+    "review_id": "398566f7-2519-40e6-a2f4-6676657a18a7",
+    "severity": 4
+   }
+  ],
+  "playback.general": [
+   {
+    "quote": "keeps stopping mid show",
+    "review_id": "039112fc-bbed-4540-83cc-890fcb129751",
+    "severity": 4
+   },
+   {
+    "quote": "Black screen of death. Having to Uninstaller and reinstall after closing and opening app 5x to see if it would work.",
+    "review_id": "065c418e-7f18-42a3-b241-fe693b7a2b0c",
+    "severity": 4
+   },
+   {
+    "quote": "It was working fine and all and would've gotten a 5 star if it hadn't been for this glitch I've started to experience just this December.",
+    "review_id": "06d4c78d-73b4-4b54-9ef3-3d5a0d18cb96",
+    "severity": 4
+   }
+  ],
+  "usability.ads": [
+   {
+    "quote": "This app is very very frustrating, you only get 6 skips a day, you can't pick the song you want from your playlist, you can't skip forward it's absolutely ridiculous getting premium is the only way yo",
+    "review_id": "11ad400f-4487-4dfa-a9da-c8d624f4f107",
+    "severity": 4
+   },
+   {
+    "quote": "useless music app music k naam pe khaali ad dikhata hai.",
+    "review_id": "6eb64519-37d4-4591-a47a-bbb96357de36",
+    "severity": 4
+   },
+   {
+    "quote": "It's good it's just ads and I'm having troubles getting my Playlist",
+    "review_id": "bfda45a9-d2a3-4aa6-8530-9abe87a63df8",
+    "severity": 4
+   }
+  ],
+  "usability.update_redesign": [
+   {
+    "quote": "The update made the app useless .... Uninstall krdia ye app ab bekar hai ... Wynk hi theek h",
+    "review_id": "45c561b9-cc47-4d80-95d3-f0d20bc84af3",
+    "severity": 4
+   },
+   {
+    "quote": "WHAT IN THE WORLD IS THIS UPDATE?",
+    "review_id": "9e5f9745-f8be-48d3-b9de-4d118507d94a",
+    "severity": 4
+   },
+   {
+    "quote": "I've loved Spotify but it's baffling to me how every update they make seems to make the app LESS user friendly.",
+    "review_id": "0070e713-4cb7-4d78-954f-1764d5593c91",
+    "severity": 3
+   }
+  ]
+ }
+}

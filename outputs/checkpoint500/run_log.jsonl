@@ -1,0 +1,11 @@
+{"t": 1792203641.739, "run_id": "cp500-initial", "stage": "prepare", "event": "start"}
+{"t": 1792203641.752, "run_id": "cp500-initial", "stage": "prepare", "event": "end", "seconds": 0.013, "result": {"records": 500, "unique_review_ids": 500, "duplicate_review_ids": 0, "empty_review_text": 0, "nonempty_review_text": 500, "distinct_nonempty_texts": 479, "exact_duplicate_text_rows": 21, "missing_app_version": 108, "golden_ids_in_file": 0}}
+{"t": 1792203641.752, "run_id": "cp500-initial", "stage": "enrich", "event": "start"}
+{"t": 1792203693.749, "run_id": "cp500-initial", "stage": "enrich", "event": "end", "seconds": 51.997, "result": {"executed": true, "phase": "initial", "texts_completed": 479, "texts_failed": 0, "stopped": null, "wall_seconds": 51.78, "run_spend_usd": 0.015863777999999978}}
+{"t": 1792203693.75, "run_id": "cp500-initial", "stage": "verify", "event": "start"}
+{"t": 1792203702.846, "run_id": "cp500-initial", "stage": "verify", "event": "end", "seconds": 9.096, "result": {"executed": true, "stopped": null, "run_spend_usd": 0.006772, "sample_size": 20, "topic_agreement": 0.9, "intent_agreement": 1.0, "severity_exact_agreement": 0.95, "severity_mae": 0.05}}
+{"t": 1792203702.847, "run_id": "cp500-initial", "stage": "group", "event": "start"}
+{"t": 1792203717.146, "run_id": "cp500-initial", "stage": "group", "event": "end", "seconds": 14.3, "result": {"memberships": 238, "issues": 29, "named_by_model": true}}
+{"t": 1792203717.147, "run_id": "cp500-initial", "stage": "rank", "event": "start"}
+{"t": 1792203717.151, "run_id": "cp500-initial", "stage": "rank", "event": "end", "seconds": 0.004, "result": 29}
+{"t": 1792203717.151, "run_id": "cp500-initial", "stage": "memo", "event": "start"}

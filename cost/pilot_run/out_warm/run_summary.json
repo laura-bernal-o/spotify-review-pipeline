@@ -1,0 +1,65 @@
+{
+  "claude_effort": "low",
+  "claude_model": "claude-haiku-4-5",
+  "db": "/Users/laurabernal/Documents/Claude/Multi Agent Pipeline/cost/pilot_run/pilot.db",
+  "executed": true,
+  "input": "/Users/laurabernal/Documents/Claude/Multi Agent Pipeline/data/raw/cost_100.csv",
+  "jev_model": "jev-1.13.0",
+  "label_config": "jev-1.13.0+labels-v1-short+schema-a5-v1+q=topic,intent,severity",
+  "run_cap_usd": 5.0,
+  "run_id": "pilot-warm",
+  "scope": "all",
+  "spend_caps_usd": {
+    "claude": 5.0,
+    "jev": 5.0
+  },
+  "stages": {
+    "enrich": {
+      "result": {
+        "executed": true,
+        "phase": "resume",
+        "run_spend_usd": 0.0,
+        "stopped": null,
+        "texts_completed": 0,
+        "texts_failed": 0,
+        "wall_seconds": 0.0
+      },
+      "seconds": 0.243
+    },
+    "group": {
+      "result": {
+        "issues": 19,
+        "memberships": 51,
+        "named_by_model": true
+      },
+      "seconds": 0.801
+    },
+    "memo": {
+      "result": {
+        "claims": 11,
+        "executed": true,
+        "recommended_area": "usability"
+      },
+      "seconds": 0.002
+    },
+    "rank": {
+      "result": 19,
+      "seconds": 0.001
+    },
+    "verify": {
+      "result": {
+        "executed": true,
+        "intent_agreement": 1.0,
+        "run_spend_usd": 0.0,
+        "sample_size": 20,
+        "severity_exact_agreement": 0.95,
+        "severity_mae": 0.05,
+        "stopped": null,
+        "topic_agreement": 0.95
+      },
+      "seconds": 0.001
+    }
+  },
+  "wall_seconds": 1.05,
+  "workers": 1
+}

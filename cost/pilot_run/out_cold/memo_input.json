@@ -1,0 +1,205 @@
+{
+ "overall_metrics": {
+  "source_rows": 100,
+  "status_counts": {
+   "completed": 100
+  },
+  "classified_in_scope": 100,
+  "intent_counts": {
+   "cancellation": 10,
+   "complaint": 41,
+   "praise": 39,
+   "request": 4,
+   "unclear": 6
+  },
+  "topic_counts_complaints": {
+   "access": 2,
+   "billing": 5,
+   "catalog": 5,
+   "downloads": 2,
+   "other": 14,
+   "playback": 6,
+   "usability": 17
+  },
+  "needs_review": 20
+ },
+ "ranking_top": [
+  {
+   "rank": "1",
+   "issue_id": "other.general",
+   "complaint_count": "14",
+   "severity_sum": "27",
+   "mean_severity": "1.928571",
+   "priority_score": "27",
+   "name": "General Negative Sentiment"
+  },
+  {
+   "rank": "2",
+   "issue_id": "usability.update_redesign",
+   "complaint_count": "6",
+   "severity_sum": "20",
+   "mean_severity": "3.333333",
+   "priority_score": "20",
+   "name": "Recent Update Broke Features"
+  },
+  {
+   "rank": "3",
+   "issue_id": "playback.general",
+   "complaint_count": "3",
+   "severity_sum": "11",
+   "mean_severity": "3.666667",
+   "priority_score": "11",
+   "name": "Playback Control Problems"
+  },
+  {
+   "rank": "4",
+   "issue_id": "usability.queue_playlist",
+   "complaint_count": "4",
+   "severity_sum": "11",
+   "mean_severity": "2.750000",
+   "priority_score": "11",
+   "name": "Queue and Playlist Issues"
+  },
+  {
+   "rank": "5",
+   "issue_id": "billing.premium_paywall",
+   "complaint_count": "3",
+   "severity_sum": "10",
+   "mean_severity": "3.333333",
+   "priority_score": "10",
+   "name": "Premium Features Restricted"
+  },
+  {
+   "rank": "6",
+   "issue_id": "usability.general",
+   "complaint_count": "4",
+   "severity_sum": "10",
+   "mean_severity": "2.500000",
+   "priority_score": "10",
+   "name": "General App Bugs"
+  },
+  {
+   "rank": "7",
+   "issue_id": "usability.ads",
+   "complaint_count": "3",
+   "severity_sum": "8",
+   "mean_severity": "2.666667",
+   "priority_score": "8",
+   "name": "Excessive Ads in Free Tier"
+  },
+  {
+   "rank": "8",
+   "issue_id": "catalog.lyrics",
+   "complaint_count": "2",
+   "severity_sum": "5",
+   "mean_severity": "2.500000",
+   "priority_score": "5",
+   "name": "Inconsistent Lyrics Display"
+  },
+  {
+   "rank": "9",
+   "issue_id": "access.account_lost",
+   "complaint_count": "1",
+   "severity_sum": "4",
+   "mean_severity": "4.000000",
+   "priority_score": "4",
+   "name": "Unable to Access Account"
+  },
+  {
+   "rank": "10",
+   "issue_id": "access.password_reset",
+   "complaint_count": "1",
+   "severity_sum": "4",
+   "mean_severity": "4.000000",
+   "priority_score": "4",
+   "name": "Password Reset Not Working"
+  }
+ ],
+ "evidence_pack": {
+  "other.general": [
+   {
+    "quote": "Worst app",
+    "review_id": "06a45bd5-3ed9-43af-b7f2-8b9487e2ffff",
+    "severity": 2
+   },
+   {
+    "quote": "Worst app.",
+    "review_id": "178c3b49-b689-4fe4-92a2-2257a58e6d95",
+    "severity": 2
+   },
+   {
+    "quote": "Noob app",
+    "review_id": "2d5cdd20-3094-40a5-bc6e-653302b59b56",
+    "severity": 2
+   }
+  ],
+  "usability.update_redesign": [
+   {
+    "quote": "The update made the app useless .... Uninstall krdia ye app ab bekar hai ... Wynk hi theek h",
+    "review_id": "45c561b9-cc47-4d80-95d3-f0d20bc84af3",
+    "severity": 4
+   },
+   {
+    "quote": "WHAT IN THE WORLD IS THIS UPDATE?",
+    "review_id": "9e5f9745-f8be-48d3-b9de-4d118507d94a",
+    "severity": 4
+   },
+   {
+    "quote": "Am very sad about the new spotfy update. i can't play song happly . Can't repeat and play specific part.please solve this matter. I'm leaving spotfy",
+    "review_id": "e16a4550-43e7-4ae1-b538-a65cc652c31b",
+    "severity": 4
+   }
+  ],
+  "playback.general": [
+   {
+    "quote": "I am unable to use my Google assistant on the app.it says playing your Spotify playlist but do not play the songs",
+    "review_id": "46ff0c74-5e86-4e5b-b4cd-36201aab0f9e",
+    "severity": 4
+   },
+   {
+    "quote": "You can't even listen to music you want it just shuffles it, like what the hell? This app is killing it self and forcing you to pay premium for basic things like just listening to music.",
+    "review_id": "a78d831a-69f4-428a-9235-cfdd9775c509",
+    "severity": 4
+   },
+   {
+    "quote": "Keep stopping halfway while playing music and it dun go back to where they stop and start playing a new song for you.",
+    "review_id": "6c257eba-3dca-49f6-b7f0-4c4484d81e26",
+    "severity": 3
+   }
+  ],
+  "usability.queue_playlist": [
+   {
+    "quote": "Your new features are really bad thing that I found because it plays any song of the Playlist randomly it really really disappointing for and listeners who don't need disturbance in their song pattern",
+    "review_id": "5c9c17d3-9d6a-4fa1-a2a4-ae98eefbbd25",
+    "severity": 3
+   },
+   {
+    "quote": "Na queue m lgte h gaane, na skip kr skte h, na random chla skte h, kya bkchodi h ye???",
+    "review_id": "89ea2c30-db8b-459d-8ab7-bbcb7f92c774",
+    "severity": 3
+   },
+   {
+    "quote": "I just want to listen to one song but nooo I have to go through A HOLE PLAYLIST AND I CAN ONLY SKIP 6 OF THEM 6!!!",
+    "review_id": "ebc64fe2-9553-4528-87d5-cb4bb9783be6",
+    "severity": 3
+   }
+  ],
+  "billing.premium_paywall": [
+   {
+    "quote": "Why it requires premium just to play next music / to choose music ?? And why the specific part of song cannot be played ?",
+    "review_id": "ad730d1a-829a-4dc4-9561-7e1cd07e2c30",
+    "severity": 4
+   },
+   {
+    "quote": "to restrict all the features jst so people would purchase premium ..",
+    "review_id": "88439ec2-7c49-4c57-bedb-c5e098692aff",
+    "severity": 3
+   },
+   {
+    "quote": "This was fine till the last update, now you can't even pick a certain song without Spotify premium, and now you can only skip 6 songs, like please just let the songs fit my mood!",
+    "review_id": "d146397f-4a94-4980-be00-ae9212eca3a7",
+    "severity": 3
+   }
+  ]
+ }
+}

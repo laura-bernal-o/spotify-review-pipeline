@@ -1,0 +1,10 @@
+{
+ "overall_metrics": {
+  "classified_in_scope": "0",
+  "needs_review": "0",
+  "source_rows": "10000",
+  "status.pending": "10000"
+ },
+ "ranking_top": [],
+ "evidence_pack": {}
+}

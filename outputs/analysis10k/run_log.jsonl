@@ -1,0 +1,13 @@
+{"t": 1792204366.943, "run_id": "run-20261016-193246", "stage": "prepare", "event": "start"}
+{"t": 1792204367.143, "run_id": "run-20261016-193246", "stage": "prepare", "event": "end", "seconds": 0.2, "result": {"records": 10000, "unique_review_ids": 10000, "duplicate_review_ids": 0, "empty_review_text": 0, "nonempty_review_text": 10000, "distinct_nonempty_texts": 8448, "exact_duplicate_text_rows": 1552, "missing_app_version": 2447, "golden_ids_in_file": 0}}
+{"t": 1792204367.143, "run_id": "run-20261016-193246", "stage": "enrich", "event": "start"}
+{"t": 1792204367.215, "run_id": "run-20261016-193246", "stage": "enrich", "event": "end", "seconds": 0.071, "result": {"executed": false, "calls": 8448, "tokens_per_call": 700, "basis": "pre-pilot estimate", "est_input_tokens": 5913600, "est_cost_usd": 0.2484}}
+{"t": 1792204367.215, "run_id": "run-20261016-193246", "stage": "verify", "event": "start"}
+{"t": 1792204367.216, "run_id": "run-20261016-193246", "stage": "verify", "event": "end", "seconds": 0.001, "result": {"executed": false, "reviews": 0, "requests": 0, "est_cost_usd": 0.0, "model": "claude-haiku-4-5"}}
+{"t": 1792204367.216, "run_id": "run-20261016-193246", "stage": "group", "event": "start"}
+{"t": 1792204367.217, "run_id": "run-20261016-193246", "stage": "group", "event": "end", "seconds": 0.001, "result": {"memberships": 0, "issues": 0, "named_by_model": false}}
+{"t": 1792204367.217, "run_id": "run-20261016-193246", "stage": "rank", "event": "start"}
+{"t": 1792204367.218, "run_id": "run-20261016-193246", "stage": "rank", "event": "end", "seconds": 0.001, "result": 0}
+{"t": 1792204367.218, "run_id": "run-20261016-193246", "stage": "memo", "event": "start"}
+{"t": 1792204367.221, "run_id": "run-20261016-193246", "stage": "memo", "event": "end", "seconds": 0.003, "result": {"executed": false, "worst_case_usd": 0.0812}}
+{"t": 1792204372.651, "run_id": "a10k-initial", "stage": "enrich", "event": "start"}

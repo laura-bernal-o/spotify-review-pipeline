@@ -1,0 +1,78 @@
+{
+  "claude_effort": "low",
+  "claude_models": {
+    "group": "claude-haiku-4-5",
+    "memo": "claude-sonnet-5-5",
+    "verify": "claude-haiku-4-5"
+  },
+  "db": "data/work/analysis10k.db",
+  "executed": false,
+  "input": "data/raw/analysis_10000.csv",
+  "jev_model": "jev-1.13.0",
+  "label_config": "jev-1.13.0+labels-v1-short+schema-a5-v1+q=topic,intent,severity",
+  "run_cap_usd": 5.0,
+  "run_id": "run-20261016-193246",
+  "scope": "all",
+  "spend_caps_usd": {
+    "claude": 5.0,
+    "jev": 5.0
+  },
+  "stages": {
+    "enrich": {
+      "result": {
+        "basis": "pre-pilot estimate",
+        "calls": 8448,
+        "est_cost_usd": 0.2484,
+        "est_input_tokens": 5913600,
+        "executed": false,
+        "tokens_per_call": 700
+      },
+      "seconds": 0.071
+    },
+    "group": {
+      "result": {
+        "issues": 0,
+        "memberships": 0,
+        "named_by_model": false
+      },
+      "seconds": 0.001
+    },
+    "memo": {
+      "result": {
+        "executed": false,
+        "worst_case_usd": 0.0812
+      },
+      "seconds": 0.003
+    },
+    "prepare": {
+      "result": {
+        "distinct_nonempty_texts": 8448,
+        "duplicate_review_ids": 0,
+        "empty_review_text": 0,
+        "exact_duplicate_text_rows": 1552,
+        "golden_ids_in_file": 0,
+        "missing_app_version": 2447,
+        "nonempty_review_text": 10000,
+        "records": 10000,
+        "unique_review_ids": 10000
+      },
+      "seconds": 0.2
+    },
+    "rank": {
+      "result": 0,
+      "seconds": 0.001
+    },
+    "verify": {
+      "result": {
+        "est_cost_usd": 0.0,
+        "executed": false,
+        "model": "claude-haiku-4-5",
+        "requests": 0,
+        "reviews": 0
+      },
+      "seconds": 0.001
+    }
+  },
+  "wall_seconds": 0.277,
+  "workers": 1
+}

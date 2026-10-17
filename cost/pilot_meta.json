@@ -1,0 +1,36 @@
+{
+  "input": "data/raw/cost_100.csv",
+  "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+  "input_rows": 100,
+  "workers": 1,
+  "settings": {
+    "jev_model": "jev-1.13.0",
+    "claude_model": "claude-haiku-4-5",
+    "claude_effort": "low",
+    "enrich_batch_size": 1,
+    "verify_batch_size": 25,
+    "verify_sample": "20 (minimum) of 100",
+    "max_tokens": {
+      "verify": 4000,
+      "group": 4000,
+      "memo": 8000
+    }
+  },
+  "cold": {
+    "wall_seconds": 49.713,
+    "input_rows": 100,
+    "completed_records": 100,
+    "failed_records": 0,
+    "enrich_cache_hits": 0,
+    "claude_cache_hits": 0
+  },
+  "warm": {
+    "wall_seconds": 1.267,
+    "input_rows": 100,
+    "completed_records": 100,
+    "failed_records": 0,
+    "enrich_cache_hits": 100,
+    "claude_cache_hits": 2
+  },
+  "unique_texts": 100
+}

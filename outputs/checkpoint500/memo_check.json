@@ -1,0 +1,27 @@
+{
+  "final_problems": [],
+  "prompt_version": "memo-v3-placeholders",
+  "rejected_drafts": [
+    [
+      "typed number/ID 'rank-1' (use a placeholder or a full review_id)",
+      "typed number/ID 'rank-4' (use a placeholder or a full review_id)",
+      "typed number/ID 'rank-5' (use a placeholder or a full review_id)",
+      "typed number/ID '3,' (use a placeholder or a full review_id)",
+      "typed number/ID 'Q2+' (use a placeholder or a full review_id)",
+      "unsupported business claim: 'lower churn'"
+    ],
+    [
+      "typed number/ID 'rank-1' (use a placeholder or a full review_id)",
+      "typed number/ID '(C1:' (use a placeholder or a full review_id)",
+      "typed number/ID '(C3:' (use a placeholder or a full review_id)",
+      "typed number/ID '(C2:' (use a placeholder or a full review_id)",
+      "typed number/ID '(C5:' (use a placeholder or a full review_id)",
+      "typed number/ID '(C4:' (use a placeholder or a full review_id)",
+      "typed number/ID '(C8:' (use a placeholder or a full review_id)",
+      "typed number/ID '3,' (use a placeholder or a full review_id)",
+      "typed number/ID '2,' (use a placeholder or a full review_id)",
+      "unsupported business claim: 'lower churn'",
+      "unsupported business claim: 'reduce churn'"
+    ]
+  ]
+}
