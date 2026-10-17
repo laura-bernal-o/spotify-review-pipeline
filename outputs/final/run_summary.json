@@ -1,0 +1,80 @@
+{
+  "claude_effort": "low",
+  "claude_models": {
+    "group": "claude-haiku-4-5",
+    "memo": "claude-sonnet-5-5",
+    "verify": "claude-haiku-4-5"
+  },
+  "db": "data/work/state.db",
+  "executed": true,
+  "input": "data/raw/spotify_reviews_18months.csv",
+  "jev_model": "jev-1.13.0",
+  "label_config": "jev-1.13.0+labels-v1-short+schema-a5-v1+q=topic,intent,severity",
+  "run_cap_usd": 5.0,
+  "run_id": "final-resume",
+  "scope": "100000",
+  "spend_caps_usd": {
+    "claude": 5.0,
+    "jev": 5.0
+  },
+  "stages": {
+    "enrich": {
+      "result": {
+        "executed": true,
+        "phase": "resume",
+        "run_spend_usd": 2.461958184000353,
+        "stopped": null,
+        "texts_completed": 74149,
+        "texts_failed": 0,
+        "wall_seconds": 9012.97
+      },
+      "seconds": 9015.386
+    },
+    "export": {
+      "result": {
+        "grading_dir": "grading",
+        "records": {
+          "completed": 100000,
+          "quarantined": 560622
+        }
+      },
+      "seconds": 14.357
+    },
+    "group": {
+      "result": {
+        "issues": 38,
+        "memberships": 43185,
+        "named_by_model": true
+      },
+      "seconds": 21.457
+    },
+    "memo": {
+      "result": {
+        "claims": 11,
+        "executed": true,
+        "recommended_area": "playback",
+        "rejected_drafts": 2
+      },
+      "seconds": 30.136
+    },
+    "rank": {
+      "result": 38,
+      "seconds": 0.208
+    },
+    "verify": {
+      "result": {
+        "executed": true,
+        "intent_agreement": 0.9014,
+        "run_spend_usd": 0.250351,
+        "sample_size": 781,
+        "severity_exact_agreement": 0.8092,
+        "severity_mae": 0.2164,
+        "stopped": null,
+        "topic_agreement": 0.8284
+      },
+      "seconds": 349.101
+    }
+  },
+  "wall_seconds": 9430.65,
+  "workers": 1
+}

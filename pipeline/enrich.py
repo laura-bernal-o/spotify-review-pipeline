@@ -257,26 +257,39 @@ def run(db, scope, execute, run_id, calls_jsonl, workers=config.WORKERS, stop_af
         answers, info = call_with_retries(client, ledger, rep_id, text, label_config, phase)
         return item, answers, info
 
+    def handle(fut):
+        nonlocal done, failed
+        (rep_id, text, aliases), answers, info = fut.result()
+        if answers is None:
+            save_failed(conn, [rep_id, *aliases], info)
+            failed += 1
+        else:
+            save_completed(conn, rep_id, aliases, build_record(text, answers), label_config, info, run_id)
+            done += 1
+
     stopped = None
+    pool = ThreadPoolExecutor(max_workers=workers)
+    futures, handled = [], set()
     try:
-        with ThreadPoolExecutor(max_workers=workers) as pool:
-            for i in range(0, len(work), config.COMMIT_EVERY):
-                chunk = work[i:i + config.COMMIT_EVERY]
-                for (rep_id, text, aliases), answers, info in pool.map(task, chunk):
-                    if answers is None:
-                        save_failed(conn, [rep_id, *aliases], info)
-                        failed += 1
-                    else:
-                        save_completed(conn, rep_id, aliases, build_record(text, answers), label_config, info, run_id)
-                        done += 1
-                conn.commit()   # results saved after every chunk
-                print(f"[enrich] saved {done:,} texts ok, {failed} failed, {time.time() - started:.1f}s, "
-                      f"run spend ${ledger.run_spent:.5f}")
+        for i in range(0, len(work), config.COMMIT_EVERY):
+            futures = [pool.submit(task, item) for item in work[i:i + config.COMMIT_EVERY]]
+            for f in futures:
+                handle(f)
+                handled.add(f)
+            conn.commit()   # results saved after every chunk
+            print(f"[enrich] saved {done:,} texts ok, {failed} failed, {time.time() - started:.1f}s, "
+                  f"run spend ${ledger.run_spent:.5f}", flush=True)
     except SpendCapReached as e:
         stopped = f"spend cap: {e}"
     except KeyboardInterrupt:
         stopped = "interrupted by user"
     finally:
+        # Cancel queued work immediately; wait only for the call already in flight, and keep its result
+        # (it was paid for) instead of discarding it.
+        pool.shutdown(wait=True, cancel_futures=True)
+        for f in futures:
+            if f not in handled and f.done() and not f.cancelled() and f.exception() is None:
+                handle(f)
         conn.commit()
     if stopped:
         print(f"[enrich] STOPPED ({stopped}). Saved work is kept; re-run to resume.")

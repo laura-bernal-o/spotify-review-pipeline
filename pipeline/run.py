@@ -14,6 +14,7 @@ Usage:
 """
 import argparse
 import json
+import signal
 import time
 from pathlib import Path
 
@@ -38,6 +39,13 @@ def main():
     p.add_argument("--grading", default=None, help="write grading/ export here")
     p.add_argument("--run-id", default=time.strftime("run-%Y%m%d-%H%M%S"))
     a = p.parse_args()
+
+    # Graceful stop on Ctrl-C *and* on SIGTERM (and even when launched as a background job, where SIGINT
+    # is inherited as ignored): both raise KeyboardInterrupt, so in-flight results are saved before exit.
+    def _stop(signum, frame):
+        raise KeyboardInterrupt(f"signal {signum}")
+    signal.signal(signal.SIGINT, _stop)
+    signal.signal(signal.SIGTERM, _stop)
 
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)

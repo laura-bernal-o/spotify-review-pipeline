@@ -11,3 +11,12 @@
 {"t": 1792204367.218, "run_id": "run-20261016-193246", "stage": "memo", "event": "start"}
 {"t": 1792204367.221, "run_id": "run-20261016-193246", "stage": "memo", "event": "end", "seconds": 0.003, "result": {"executed": false, "worst_case_usd": 0.0812}}
 {"t": 1792204372.651, "run_id": "a10k-initial", "stage": "enrich", "event": "start"}
+{"t": 1792205259.936, "run_id": "a10k-initial", "stage": "enrich", "event": "end", "seconds": 887.285, "result": {"executed": true, "phase": "initial", "texts_completed": 8448, "texts_failed": 0, "stopped": null, "wall_seconds": 887.02, "run_spend_usd": 0.2799965699999963}}
+{"t": 1792205259.936, "run_id": "a10k-initial", "stage": "verify", "event": "start"}
+{"t": 1792205296.43, "run_id": "a10k-initial", "stage": "verify", "event": "end", "seconds": 36.494, "result": {"executed": true, "stopped": null, "run_spend_usd": 0.026754, "sample_size": 84, "topic_agreement": 0.8095, "intent_agreement": 0.8929, "severity_exact_agreement": 0.8571, "severity_mae": 0.1667}}
+{"t": 1792205296.431, "run_id": "a10k-initial", "stage": "group", "event": "start"}
+{"t": 1792205313.875, "run_id": "a10k-initial", "stage": "group", "event": "end", "seconds": 17.444, "result": {"memberships": 4409, "issues": 37, "named_by_model": true}}
+{"t": 1792205313.875, "run_id": "a10k-initial", "stage": "rank", "event": "start"}
+{"t": 1792205313.908, "run_id": "a10k-initial", "stage": "rank", "event": "end", "seconds": 0.032, "result": 37}
+{"t": 1792205313.908, "run_id": "a10k-initial", "stage": "memo", "event": "start"}
+{"t": 1792205333.73, "run_id": "a10k-initial", "stage": "memo", "event": "end", "seconds": 19.822, "result": {"executed": true, "recommended_area": "usability", "claims": 9, "rejected_drafts": 1}}

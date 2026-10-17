@@ -1,0 +1,12 @@
+claim_id,issue_id,metric,value
+C1,playback.general,complaint_count,2846
+C2,playback.general,severity_sum,10208
+C3,playback.general,mean_severity,3.586788
+C4,other.general,complaint_count,13743
+C5,other.general,priority_score,27620
+C6,other.general,mean_severity,2.009750
+C7,usability.ads,complaint_count,4867
+C8,usability.ads,priority_score,12215
+C9,billing.premium_paywall,complaint_count,3541
+C10,billing.premium_paywall,mean_severity,2.968653
+C11,access.login_failure,mean_severity,3.996479

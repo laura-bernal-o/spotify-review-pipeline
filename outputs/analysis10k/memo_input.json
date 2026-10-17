@@ -1,10 +1,216 @@
 {
  "overall_metrics": {
-  "classified_in_scope": "0",
-  "needs_review": "0",
+  "classified_in_scope": "10000",
+  "intent.cancellation": "421",
+  "intent.complaint": "3988",
+  "intent.praise": "4385",
+  "intent.request": "386",
+  "intent.unclear": "820",
+  "needs_review": "1817",
   "source_rows": "10000",
-  "status.pending": "10000"
+  "status.completed": "10000",
+  "topic.access.complaint_count": "155",
+  "topic.access.mean_severity": "3.916129",
+  "topic.access.severity_sum": "607",
+  "topic.billing.complaint_count": "626",
+  "topic.billing.mean_severity": "2.940895",
+  "topic.billing.severity_sum": "1841",
+  "topic.catalog.complaint_count": "208",
+  "topic.catalog.mean_severity": "2.985577",
+  "topic.catalog.severity_sum": "621",
+  "topic.downloads.complaint_count": "97",
+  "topic.downloads.mean_severity": "3.412371",
+  "topic.downloads.severity_sum": "331",
+  "topic.other.complaint_count": "1369",
+  "topic.other.mean_severity": "2.000000",
+  "topic.other.severity_sum": "2738",
+  "topic.playback.complaint_count": "611",
+  "topic.playback.mean_severity": "3.607201",
+  "topic.playback.severity_sum": "2204",
+  "topic.support.complaint_count": "11",
+  "topic.support.mean_severity": "2.545455",
+  "topic.support.severity_sum": "28",
+  "topic.usability.complaint_count": "1332",
+  "topic.usability.mean_severity": "2.758258",
+  "topic.usability.severity_sum": "3674"
  },
- "ranking_top": [],
- "evidence_pack": {}
+ "ranking_top": [
+  {
+   "rank": "1",
+   "issue_id": "other.general",
+   "complaint_count": "1369",
+   "severity_sum": "2738",
+   "mean_severity": "2.000000",
+   "priority_score": "2738",
+   "name": "Miscellaneous Issues"
+  },
+  {
+   "rank": "2",
+   "issue_id": "usability.ads",
+   "complaint_count": "501",
+   "severity_sum": "1252",
+   "mean_severity": "2.499002",
+   "priority_score": "1252",
+   "name": "Excessive Ads and Interruptions"
+  },
+  {
+   "rank": "3",
+   "issue_id": "billing.premium_paywall",
+   "complaint_count": "401",
+   "severity_sum": "1203",
+   "mean_severity": "3.000000",
+   "priority_score": "1203",
+   "name": "Premium Paywall Restrictions"
+  },
+  {
+   "rank": "4",
+   "issue_id": "playback.general",
+   "complaint_count": "326",
+   "severity_sum": "1182",
+   "mean_severity": "3.625767",
+   "priority_score": "1182",
+   "name": "General Playback Issues"
+  },
+  {
+   "rank": "5",
+   "issue_id": "usability.general",
+   "complaint_count": "339",
+   "severity_sum": "926",
+   "mean_severity": "2.731563",
+   "priority_score": "926",
+   "name": "Poor User Interface"
+  },
+  {
+   "rank": "6",
+   "issue_id": "usability.queue_playlist",
+   "complaint_count": "176",
+   "severity_sum": "535",
+   "mean_severity": "3.039773",
+   "priority_score": "535",
+   "name": "Playlist and Queue Issues"
+  },
+  {
+   "rank": "7",
+   "issue_id": "usability.update_redesign",
+   "complaint_count": "148",
+   "severity_sum": "452",
+   "mean_severity": "3.054054",
+   "priority_score": "452",
+   "name": "Updates Make App Unusable"
+  },
+  {
+   "rank": "8",
+   "issue_id": "usability.shuffle",
+   "complaint_count": "108",
+   "severity_sum": "329",
+   "mean_severity": "3.046296",
+   "priority_score": "329",
+   "name": "Shuffle and Playback Order"
+  },
+  {
+   "rank": "9",
+   "issue_id": "access.login_failure",
+   "complaint_count": "77",
+   "severity_sum": "308",
+   "mean_severity": "4.000000",
+   "priority_score": "308",
+   "name": "Login Authentication Failure"
+  },
+  {
+   "rank": "10",
+   "issue_id": "playback.connectivity",
+   "complaint_count": "79",
+   "severity_sum": "284",
+   "mean_severity": "3.594937",
+   "priority_score": "284",
+   "name": "Playback Connection Issues"
+  }
+ ],
+ "evidence_pack": {
+  "other.general": [
+   {
+    "quote": "Collects too much personal information",
+    "review_id": "21ddfe12-8433-4bad-b0f8-e7f605c056ae",
+    "severity": 5
+   },
+   {
+    "quote": "Blackmailing behaviour after making people use to...but this is India people know how when and where to switch",
+    "review_id": "4815ca27-10dc-4b81-85dc-22c40c2df8bf",
+    "severity": 5
+   },
+   {
+    "quote": "This is a very very bad app and is a very data has hacking for our mobile",
+    "review_id": "68a5d92a-1dca-40ba-b9f8-fc61a24b12a8",
+    "severity": 5
+   }
+  ],
+  "usability.ads": [
+   {
+    "quote": "This app is not good it trase our history and their are many ads in it and it is very difficult to use.",
+    "review_id": "117770a7-cec9-4bc3-8a9f-a5d6f3544b5d",
+    "severity": 5
+   },
+   {
+    "quote": "When asked to watch an ad for 30 minutes of uninterrupted listening upon clicking ok it will play 3 or 4 ads and not ten minutes later play another.",
+    "review_id": "ee11e1df-cb73-4c3a-b5e8-7268c7872b01",
+    "severity": 5
+   },
+   {
+    "quote": "It won't show any of my Playlists or library-- the screen is black and no songs are available. I have the free version so I can listen to all the ads, though!",
+    "review_id": "056c340f-c7ad-42d8-a275-37e46f1f4f24",
+    "severity": 4
+   }
+  ],
+  "billing.premium_paywall": [
+   {
+    "quote": "Can't do anything without premium",
+    "review_id": "0980807e-9e30-4452-97f5-445a60bf855a",
+    "severity": 4
+   },
+   {
+    "quote": "can't get premium",
+    "review_id": "09b52e47-2088-474c-b674-34eac611748c",
+    "severity": 4
+   },
+   {
+    "quote": "Premium user.",
+    "review_id": "0f1d7211-cd8d-4264-a433-2a5511bba7a1",
+    "severity": 4
+   }
+  ],
+  "playback.general": [
+   {
+    "quote": "It stays on even when u turn off wasting data",
+    "review_id": "273cb2d7-7f93-458c-bf3b-4bf7b54427a2",
+    "severity": 5
+   },
+   {
+    "quote": "I've been paying (money coming straight out of my account) for 3 months and the app hasn't work on any of my devices.",
+    "review_id": "ae7f1da6-8656-4abc-8d2d-3730923fa741",
+    "severity": 5
+   },
+   {
+    "quote": "Not working on my phone now after updating the damn app",
+    "review_id": "0148ad58-a4de-4f28-b81b-073ce9a24a68",
+    "severity": 4
+   }
+  ],
+  "usability.general": [
+   {
+    "quote": "Very invasive app, couldn't figure out how to turn it off in the background (or turn it off in general).",
+    "review_id": "013d0737-24f8-481e-b3bc-b3aad1996acf",
+    "severity": 4
+   },
+   {
+    "quote": "All the experience is good but i was unable to open my liked songs and play list and i am not able to play songs so i request spotify to rectify this and make sure with everyone this problem is been f",
+    "review_id": "06c29b5c-0f1d-4f5f-8771-17afc368340c",
+    "severity": 4
+   },
+   {
+    "quote": "This app is so hard to navigate on phone if I click a a song a have liked it goes to didn't song I never heard or it might play a demo of the song that is dumb it should play the song",
+    "review_id": "0853c56b-0fa1-4d12-9cb9-6817d52233f5",
+    "severity": 4
+   }
+  ]
+ }
 }

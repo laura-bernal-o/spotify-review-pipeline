@@ -1,0 +1,93 @@
+{
+  "cited_review_ids": [
+    "117770a7-cec9-4bc3-8a9f-a5d6f3544b5d",
+    "ee11e1df-cb73-4c3a-b5e8-7268c7872b01",
+    "0853c56b-0fa1-4d12-9cb9-6817d52233f5",
+    "06c29b5c-0f1d-4f5f-8771-17afc368340c",
+    "ae7f1da6-8656-4abc-8d2d-3730923fa741"
+  ],
+  "claims": [
+    {
+      "claim_id": "C1",
+      "issue_id": "other.general",
+      "metric": "complaint_count",
+      "value": "1369"
+    },
+    {
+      "claim_id": "C2",
+      "issue_id": "other.general",
+      "metric": "priority_score",
+      "value": "2738"
+    },
+    {
+      "claim_id": "C3",
+      "issue_id": "other.general",
+      "metric": "mean_severity",
+      "value": "2.000000"
+    },
+    {
+      "claim_id": "C4",
+      "issue_id": "usability.ads",
+      "metric": "complaint_count",
+      "value": "501"
+    },
+    {
+      "claim_id": "C5",
+      "issue_id": "usability.ads",
+      "metric": "priority_score",
+      "value": "1252"
+    },
+    {
+      "claim_id": "C6",
+      "issue_id": "usability.general",
+      "metric": "complaint_count",
+      "value": "339"
+    },
+    {
+      "claim_id": "C7",
+      "issue_id": "playback.general",
+      "metric": "mean_severity",
+      "value": "3.625767"
+    },
+    {
+      "claim_id": "C8",
+      "issue_id": "billing.premium_paywall",
+      "metric": "complaint_count",
+      "value": "401"
+    },
+    {
+      "claim_id": "C9",
+      "issue_id": "access.login_failure",
+      "metric": "complaint_count",
+      "value": "77"
+    }
+  ],
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "memo-v3-placeholders",
+  "recommendations": [
+    {
+      "claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "rationale": "usability.ads has 501 [C4] complaints and priority score 1252 [C5]; monitor it as the lead usability issue.",
+      "title": "Track ads complaints"
+    },
+    {
+      "claim_ids": [
+        "C1"
+      ],
+      "rationale": "other.general has 1369 [C1] complaints but is a catch-all; break it into actionable themes such as privacy.",
+      "title": "Split miscellaneous bucket"
+    },
+    {
+      "claim_ids": [
+        "C7"
+      ],
+      "rationale": "playback.general has mean severity 3.625767 [C7]; track it alongside volume.",
+      "title": "Severity watchlist"
+    }
+  ],
+  "recommended_area": "usability",
+  "request_id": "req_011Cg73h8o1ysuZCP1g4912d"
+}

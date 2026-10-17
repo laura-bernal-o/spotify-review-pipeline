@@ -1,0 +1,87 @@
+2026-10-16 19:51:30 $ python -m pipeline.run data/raw/spotify_reviews_18months.csv --db data/work/state.db --scope 100000 --out outputs/final --execute --run-id final-initial
+2026-10-16 19:51:31 [enrich] in scope 100,000 | pending distinct texts 78,099 | reusable from saved results 0
+2026-10-16 19:51:31 [enrich] estimate: 78,099 Jev calls x 700 tokens = $2.2961 (pre-pilot estimate)
+2026-10-16 19:51:37 [enrich] saved 50 texts ok, 0 failed, 5.4s, run spend $0.00166
+2026-10-16 19:51:42 [enrich] saved 100 texts ok, 0 failed, 10.6s, run spend $0.00330
+2026-10-16 19:51:47 [enrich] saved 150 texts ok, 0 failed, 15.6s, run spend $0.00496
+2026-10-16 19:51:53 [enrich] saved 200 texts ok, 0 failed, 21.4s, run spend $0.00661
+2026-10-16 19:51:58 [enrich] saved 250 texts ok, 0 failed, 26.6s, run spend $0.00825
+2026-10-16 19:52:03 [enrich] saved 300 texts ok, 0 failed, 31.2s, run spend $0.00990
+2026-10-16 19:52:08 [enrich] saved 350 texts ok, 0 failed, 36.3s, run spend $0.01155
+2026-10-16 19:52:12 [enrich] saved 400 texts ok, 0 failed, 41.1s, run spend $0.01319
+2026-10-16 19:52:18 [enrich] saved 450 texts ok, 0 failed, 46.2s, run spend $0.01485
+2026-10-16 19:52:22 [enrich] saved 500 texts ok, 0 failed, 50.9s, run spend $0.01649
+2026-10-16 19:52:28 [enrich] saved 550 texts ok, 0 failed, 56.2s, run spend $0.01814
+2026-10-16 19:52:32 [enrich] saved 600 texts ok, 0 failed, 61.1s, run spend $0.01980
+2026-10-16 19:52:38 [enrich] saved 650 texts ok, 0 failed, 66.2s, run spend $0.02145
+2026-10-16 19:52:43 [enrich] saved 700 texts ok, 0 failed, 71.4s, run spend $0.02311
+2026-10-16 19:52:48 [enrich] saved 750 texts ok, 0 failed, 76.8s, run spend $0.02478
+2026-10-16 19:52:54 [enrich] saved 800 texts ok, 0 failed, 82.3s, run spend $0.02643
+2026-10-16 19:53:00 [enrich] saved 850 texts ok, 0 failed, 88.4s, run spend $0.02807
+2026-10-16 19:53:06 [enrich] saved 900 texts ok, 0 failed, 95.0s, run spend $0.02973
+2026-10-16 19:53:11 [enrich] saved 950 texts ok, 0 failed, 100.0s, run spend $0.03138
+2026-10-16 19:53:16 [enrich] saved 1,000 texts ok, 0 failed, 105.0s, run spend $0.03303
+2026-10-16 19:53:22 [enrich] saved 1,050 texts ok, 0 failed, 111.0s, run spend $0.03468
+2026-10-16 19:53:29 [enrich] saved 1,100 texts ok, 0 failed, 117.1s, run spend $0.03633
+2026-10-16 19:53:33 [enrich] saved 1,150 texts ok, 0 failed, 122.1s, run spend $0.03799
+2026-10-16 19:53:39 [enrich] saved 1,200 texts ok, 0 failed, 127.1s, run spend $0.03963
+2026-10-16 19:53:43 [enrich] saved 1,250 texts ok, 0 failed, 131.9s, run spend $0.04128
+2026-10-16 19:53:48 [enrich] saved 1,300 texts ok, 0 failed, 136.6s, run spend $0.04293
+2026-10-16 19:53:53 [enrich] saved 1,350 texts ok, 0 failed, 141.4s, run spend $0.04460
+2026-10-16 19:53:59 [enrich] saved 1,400 texts ok, 0 failed, 147.4s, run spend $0.04625
+2026-10-16 19:54:04 [enrich] saved 1,450 texts ok, 0 failed, 152.3s, run spend $0.04791
+2026-10-16 19:54:09 [enrich] saved 1,500 texts ok, 0 failed, 157.1s, run spend $0.04956
+2026-10-16 19:54:14 [enrich] saved 1,550 texts ok, 0 failed, 162.3s, run spend $0.05122
+2026-10-16 19:54:19 [enrich] saved 1,600 texts ok, 0 failed, 167.2s, run spend $0.05287
+2026-10-16 19:54:25 [enrich] saved 1,650 texts ok, 0 failed, 173.4s, run spend $0.05451
+2026-10-16 19:54:30 ### sending SIGINT (Ctrl-C) to pid 58532
+2026-10-16 19:54:31 [enrich] saved 1,700 texts ok, 0 failed, 179.6s, run spend $0.05617
+2026-10-16 19:54:36 [enrich] saved 1,750 texts ok, 0 failed, 184.7s, run spend $0.05783
+2026-10-16 19:54:41 [enrich] saved 1,800 texts ok, 0 failed, 189.9s, run spend $0.05949
+2026-10-16 19:54:47 [enrich] saved 1,850 texts ok, 0 failed, 195.4s, run spend $0.06113
+2026-10-16 19:54:52 [enrich] saved 1,900 texts ok, 0 failed, 200.5s, run spend $0.06279
+2026-10-16 19:54:58 [enrich] saved 1,950 texts ok, 0 failed, 206.2s, run spend $0.06444
+2026-10-16 19:55:05 [enrich] saved 2,000 texts ok, 0 failed, 213.6s, run spend $0.06609
+2026-10-16 19:55:10 [enrich] saved 2,050 texts ok, 0 failed, 218.7s, run spend $0.06774
+2026-10-16 19:55:15 [enrich] saved 2,100 texts ok, 0 failed, 224.0s, run spend $0.06942
+2026-10-16 19:55:21 [enrich] saved 2,150 texts ok, 0 failed, 229.2s, run spend $0.07106
+2026-10-16 19:55:26 [enrich] saved 2,200 texts ok, 0 failed, 234.3s, run spend $0.07271
+2026-10-16 19:55:31 [enrich] saved 2,250 texts ok, 0 failed, 239.4s, run spend $0.07437
+2026-10-16 19:55:36 [enrich] saved 2,300 texts ok, 0 failed, 244.6s, run spend $0.07601
+2026-10-16 19:55:41 [enrich] saved 2,350 texts ok, 0 failed, 249.7s, run spend $0.07766
+2026-10-16 19:55:46 [enrich] saved 2,400 texts ok, 0 failed, 254.7s, run spend $0.07932
+2026-10-16 19:55:51 [enrich] saved 2,450 texts ok, 0 failed, 259.6s, run spend $0.08099
+2026-10-16 19:55:57 [enrich] saved 2,500 texts ok, 0 failed, 265.4s, run spend $0.08263
+2026-10-16 19:56:02 [enrich] saved 2,550 texts ok, 0 failed, 271.0s, run spend $0.08428
+2026-10-16 19:56:08 [enrich] saved 2,600 texts ok, 0 failed, 277.0s, run spend $0.08595
+2026-10-16 19:56:14 [enrich] saved 2,650 texts ok, 0 failed, 282.8s, run spend $0.08760
+2026-10-16 19:56:21 [enrich] saved 2,700 texts ok, 0 failed, 289.2s, run spend $0.08925
+2026-10-16 19:56:26 [enrich] saved 2,750 texts ok, 0 failed, 294.4s, run spend $0.09092
+2026-10-16 19:56:31 [enrich] saved 2,800 texts ok, 0 failed, 299.4s, run spend $0.09257
+2026-10-16 19:56:36 [enrich] saved 2,850 texts ok, 0 failed, 304.3s, run spend $0.09422
+2026-10-16 19:56:42 [enrich] saved 2,900 texts ok, 0 failed, 310.2s, run spend $0.09588
+2026-10-16 19:56:47 [enrich] saved 2,950 texts ok, 0 failed, 315.5s, run spend $0.09755
+2026-10-16 19:56:52 [enrich] saved 3,000 texts ok, 0 failed, 320.4s, run spend $0.09921
+2026-10-16 19:56:59 [enrich] saved 3,050 texts ok, 0 failed, 327.3s, run spend $0.10086
+2026-10-16 19:57:04 [enrich] saved 3,100 texts ok, 0 failed, 332.5s, run spend $0.10252
+2026-10-16 19:57:09 [enrich] saved 3,150 texts ok, 0 failed, 337.7s, run spend $0.10419
+2026-10-16 19:57:14 [enrich] saved 3,200 texts ok, 0 failed, 342.7s, run spend $0.10585
+2026-10-16 19:57:19 [enrich] saved 3,250 texts ok, 0 failed, 347.6s, run spend $0.10751
+2026-10-16 19:57:24 [enrich] saved 3,300 texts ok, 0 failed, 352.6s, run spend $0.10916
+2026-10-16 19:57:29 [enrich] saved 3,350 texts ok, 0 failed, 357.3s, run spend $0.11080
+2026-10-16 19:57:36 [enrich] saved 3,400 texts ok, 0 failed, 364.4s, run spend $0.11244
+2026-10-16 19:57:40 [enrich] saved 3,450 texts ok, 0 failed, 369.0s, run spend $0.11409
+2026-10-16 19:57:45 [enrich] saved 3,500 texts ok, 0 failed, 373.8s, run spend $0.11574
+2026-10-16 19:57:50 [enrich] saved 3,550 texts ok, 0 failed, 378.5s, run spend $0.11740
+2026-10-16 19:57:55 [enrich] saved 3,600 texts ok, 0 failed, 383.3s, run spend $0.11905
+2026-10-16 19:58:00 [enrich] saved 3,650 texts ok, 0 failed, 388.8s, run spend $0.12071
+2026-10-16 19:58:06 [enrich] saved 3,700 texts ok, 0 failed, 394.2s, run spend $0.12236
+2026-10-16 19:58:10 [enrich] saved 3,750 texts ok, 0 failed, 399.0s, run spend $0.12400
+2026-10-16 19:58:16 [enrich] saved 3,800 texts ok, 0 failed, 404.7s, run spend $0.12565
+2026-10-16 19:58:21 [enrich] saved 3,850 texts ok, 0 failed, 409.8s, run spend $0.12731
+2026-10-16 19:58:27 [enrich] saved 3,900 texts ok, 0 failed, 415.3s, run spend $0.12896
+2026-10-16 19:58:32 [enrich] saved 3,950 texts ok, 0 failed, 420.7s, run spend $0.13061
+2026-10-16 19:58:32 ### SIGINT was ignored (non-interactive background job inherits SIG_IGN); sending SIGTERM to pid 58532 to simulate a crash
+2026-10-16 19:58:32 ### process exited with code 143
+2026-10-16 19:58:34 checkpoint_before.json saved: 18390 completed IDs
+2026-10-16 19:58:34 calls logged: 3951 | spend $0.1306

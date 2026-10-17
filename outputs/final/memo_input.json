@@ -1,0 +1,218 @@
+{
+ "overall_metrics": {
+  "classified_in_scope": "100000",
+  "intent.cancellation": "4165",
+  "intent.complaint": "39020",
+  "intent.praise": "44485",
+  "intent.request": "3890",
+  "intent.unclear": "8440",
+  "needs_review": "17793",
+  "source_rows": "660622",
+  "status.completed": "100000",
+  "status.pending": "560609",
+  "status.quarantined": "13",
+  "topic.access.complaint_count": "1551",
+  "topic.access.mean_severity": "3.954868",
+  "topic.access.severity_sum": "6134",
+  "topic.billing.complaint_count": "5862",
+  "topic.billing.mean_severity": "2.927329",
+  "topic.billing.severity_sum": "17160",
+  "topic.catalog.complaint_count": "2140",
+  "topic.catalog.mean_severity": "2.931308",
+  "topic.catalog.severity_sum": "6273",
+  "topic.downloads.complaint_count": "1010",
+  "topic.downloads.mean_severity": "3.487129",
+  "topic.downloads.severity_sum": "3522",
+  "topic.other.complaint_count": "13743",
+  "topic.other.mean_severity": "2.009750",
+  "topic.other.severity_sum": "27620",
+  "topic.playback.complaint_count": "5816",
+  "topic.playback.mean_severity": "3.589237",
+  "topic.playback.severity_sum": "20875",
+  "topic.support.complaint_count": "113",
+  "topic.support.mean_severity": "2.592920",
+  "topic.support.severity_sum": "293",
+  "topic.usability.complaint_count": "12950",
+  "topic.usability.mean_severity": "2.773050",
+  "topic.usability.severity_sum": "35911"
+ },
+ "ranking_top": [
+  {
+   "rank": "1",
+   "issue_id": "other.general",
+   "complaint_count": "13743",
+   "severity_sum": "27620",
+   "mean_severity": "2.009750",
+   "priority_score": "27620",
+   "name": "General App Issues and Privacy Concerns"
+  },
+  {
+   "rank": "2",
+   "issue_id": "usability.ads",
+   "complaint_count": "4867",
+   "severity_sum": "12215",
+   "mean_severity": "2.509760",
+   "priority_score": "12215",
+   "name": "Excessive Advertisements and Forced Payments"
+  },
+  {
+   "rank": "3",
+   "issue_id": "billing.premium_paywall",
+   "complaint_count": "3541",
+   "severity_sum": "10512",
+   "mean_severity": "2.968653",
+   "priority_score": "10512",
+   "name": "Premium Subscription Paywall Problems"
+  },
+  {
+   "rank": "4",
+   "issue_id": "playback.general",
+   "complaint_count": "2846",
+   "severity_sum": "10208",
+   "mean_severity": "3.586788",
+   "priority_score": "10208",
+   "name": "General Playback and Performance Problems"
+  },
+  {
+   "rank": "5",
+   "issue_id": "usability.general",
+   "complaint_count": "3173",
+   "severity_sum": "8818",
+   "mean_severity": "2.779073",
+   "priority_score": "8818",
+   "name": "General Usability and Interface Problems"
+  },
+  {
+   "rank": "6",
+   "issue_id": "usability.queue_playlist",
+   "complaint_count": "1764",
+   "severity_sum": "5433",
+   "mean_severity": "3.079932",
+   "priority_score": "5433",
+   "name": "Playlist and Queue Management Issues"
+  },
+  {
+   "rank": "7",
+   "issue_id": "usability.update_redesign",
+   "complaint_count": "1399",
+   "severity_sum": "4153",
+   "mean_severity": "2.968549",
+   "priority_score": "4153",
+   "name": "Recent Update Made App Worse"
+  },
+  {
+   "rank": "8",
+   "issue_id": "usability.shuffle",
+   "complaint_count": "1150",
+   "severity_sum": "3460",
+   "mean_severity": "3.008696",
+   "priority_score": "3460",
+   "name": "Shuffle Function Broken or Always Active"
+  },
+  {
+   "rank": "9",
+   "issue_id": "access.login_failure",
+   "complaint_count": "852",
+   "severity_sum": "3405",
+   "mean_severity": "3.996479",
+   "priority_score": "3405",
+   "name": "Unable to Log Into Account"
+  },
+  {
+   "rank": "10",
+   "issue_id": "billing.charges",
+   "complaint_count": "914",
+   "severity_sum": "2800",
+   "mean_severity": "3.063457",
+   "priority_score": "2800",
+   "name": "Unauthorized or Unexpected Charges"
+  }
+ ],
+ "evidence_pack": {
+  "other.general": [
+   {
+    "quote": "This app is very bad... they have bugs and use of our internal data so some privacy reasons in not using i suggest dint use it",
+    "review_id": "059fc478-4cd4-4dc2-a5d6-442bd4b2231d",
+    "severity": 5
+   },
+   {
+    "quote": "Don't install this aap. This app owner is hacker😯 You All data is lose. ❌❌❌Not Install ❌❌❌ I LOVE ISLAM I LOVE QURAN",
+    "review_id": "12d1cda3-fbf8-4288-8899-dede3ef4d1b3",
+    "severity": 5
+   },
+   {
+    "quote": "new update. loss uour market",
+    "review_id": "15bab051-289d-48b8-b67c-4c6ca30f8efe",
+    "severity": 5
+   }
+  ],
+  "usability.ads": [
+   {
+    "quote": "This app is not good it trase our history and their are many ads in it and it is very difficult to use.",
+    "review_id": "117770a7-cec9-4bc3-8a9f-a5d6f3544b5d",
+    "severity": 5
+   },
+   {
+    "quote": "Ads every 2 songs with volume up loud and forcing you to pay for a reasonable amount after selling your info anyway",
+    "review_id": "1e4d3214-63de-4ba0-9870-a4ee8aa32942",
+    "severity": 5
+   },
+   {
+    "quote": "This is only for advertising.",
+    "review_id": "1f68a999-191d-458e-9601-fc7baf42be30",
+    "severity": 5
+   }
+  ],
+  "billing.premium_paywall": [
+   {
+    "quote": "Scammer i pay twice for premium and still showing up free account",
+    "review_id": "0712a3e7-2fcc-45d7-bf6e-1192f667ce41",
+    "severity": 5
+   },
+   {
+    "quote": "Logged into my account on my buddies phone for a party. Logged out afterward but they are still trying to make me pay for a duo account so YouTube premium for now on.",
+    "review_id": "15cadee4-2c18-40b3-999e-f29773cefc5b",
+    "severity": 5
+   },
+   {
+    "quote": "I don't want any subscription if you don't remind me before deducting fee for services.",
+    "review_id": "1be24878-5115-490a-bb7f-dad95d0630ab",
+    "severity": 5
+   }
+  ],
+  "playback.general": [
+   {
+    "quote": "Great app poorly executed.",
+    "review_id": "0f6f9680-565e-4f20-80a2-0345c37f2220",
+    "severity": 5
+   },
+   {
+    "quote": "Nice app but the problem is to much advertise that uses too much data",
+    "review_id": "12049376-998c-4955-a3b4-af840dff74f4",
+    "severity": 5
+   },
+   {
+    "quote": "It is best app for music befire uptade now we cannot hear small videos now it is worsts than any other apy and we cannot recover our data after deleteing",
+    "review_id": "1ff80a33-4e78-4324-a1e0-2f5388e3bc8f",
+    "severity": 5
+   }
+  ],
+  "usability.general": [
+   {
+    "quote": "I had previously set the timer to the end of the chapter, and I assumed that it would stay set that way until I changed it.",
+    "review_id": "1558273c-1176-4b65-9d40-1c346736e276",
+    "severity": 5
+   },
+   {
+    "quote": "تطبيق سئ وغير نافع مستهلكين أموال الناس فقط اعلانات كتير لازم تدفع فلوس مش بقدر توقف الاغنيه غير لما تشترك معاهم لازم تدفع عشان تسمع اغاني معنيه التطبيق يتجسس عليك من خلال الصلاحيات اللي بيطلبها منك ل",
+    "review_id": "46c59423-983c-4799-ad94-b3c4e3a5d261",
+    "severity": 5
+   },
+   {
+    "quote": "Ruined my life.",
+    "review_id": "482a8ea2-e374-40ac-83da-7101ef1a9f1a",
+    "severity": 5
+   }
+  ]
+ }
+}

@@ -1,0 +1,13 @@
+{"t": 1792205490.19, "run_id": "final-initial", "stage": "enrich", "event": "start"}
+{"t": 1792205940.869, "run_id": "final-resume", "stage": "enrich", "event": "start"}
+{"t": 1792214956.257, "run_id": "final-resume", "stage": "enrich", "event": "end", "seconds": 9015.386, "result": {"executed": true, "phase": "resume", "texts_completed": 74149, "texts_failed": 0, "stopped": null, "wall_seconds": 9012.97, "run_spend_usd": 2.461958184000353}}
+{"t": 1792214956.257, "run_id": "final-resume", "stage": "verify", "event": "start"}
+{"t": 1792215305.358, "run_id": "final-resume", "stage": "verify", "event": "end", "seconds": 349.101, "result": {"executed": true, "stopped": null, "run_spend_usd": 0.250351, "sample_size": 781, "topic_agreement": 0.8284, "intent_agreement": 0.9014, "severity_exact_agreement": 0.8092, "severity_mae": 0.2164}}
+{"t": 1792215305.359, "run_id": "final-resume", "stage": "group", "event": "start"}
+{"t": 1792215326.816, "run_id": "final-resume", "stage": "group", "event": "end", "seconds": 21.457, "result": {"memberships": 43185, "issues": 38, "named_by_model": true}}
+{"t": 1792215326.816, "run_id": "final-resume", "stage": "rank", "event": "start"}
+{"t": 1792215327.024, "run_id": "final-resume", "stage": "rank", "event": "end", "seconds": 0.208, "result": 38}
+{"t": 1792215327.025, "run_id": "final-resume", "stage": "memo", "event": "start"}
+{"t": 1792215357.16, "run_id": "final-resume", "stage": "memo", "event": "end", "seconds": 30.136, "result": {"executed": true, "recommended_area": "playback", "claims": 11, "rejected_drafts": 2}}
+{"t": 1792215357.161, "run_id": "final-resume", "stage": "export", "event": "start"}
+{"t": 1792215371.518, "run_id": "final-resume", "stage": "export", "event": "end", "seconds": 14.357, "result": {"records": {"completed": 100000, "quarantined": 560622}, "grading_dir": "grading"}}

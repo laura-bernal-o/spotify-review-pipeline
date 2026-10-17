@@ -1,0 +1,101 @@
+{
+  "cited_review_ids": [
+    "0f6f9680-565e-4f20-80a2-0345c37f2220",
+    "12049376-998c-4955-a3b4-af840dff74f4",
+    "1ff80a33-4e78-4324-a1e0-2f5388e3bc8f"
+  ],
+  "claims": [
+    {
+      "claim_id": "C1",
+      "issue_id": "playback.general",
+      "metric": "complaint_count",
+      "value": "2846"
+    },
+    {
+      "claim_id": "C2",
+      "issue_id": "playback.general",
+      "metric": "severity_sum",
+      "value": "10208"
+    },
+    {
+      "claim_id": "C3",
+      "issue_id": "playback.general",
+      "metric": "mean_severity",
+      "value": "3.586788"
+    },
+    {
+      "claim_id": "C4",
+      "issue_id": "other.general",
+      "metric": "complaint_count",
+      "value": "13743"
+    },
+    {
+      "claim_id": "C5",
+      "issue_id": "other.general",
+      "metric": "priority_score",
+      "value": "27620"
+    },
+    {
+      "claim_id": "C6",
+      "issue_id": "other.general",
+      "metric": "mean_severity",
+      "value": "2.009750"
+    },
+    {
+      "claim_id": "C7",
+      "issue_id": "usability.ads",
+      "metric": "complaint_count",
+      "value": "4867"
+    },
+    {
+      "claim_id": "C8",
+      "issue_id": "usability.ads",
+      "metric": "priority_score",
+      "value": "12215"
+    },
+    {
+      "claim_id": "C9",
+      "issue_id": "billing.premium_paywall",
+      "metric": "complaint_count",
+      "value": "3541"
+    },
+    {
+      "claim_id": "C10",
+      "issue_id": "billing.premium_paywall",
+      "metric": "mean_severity",
+      "value": "2.968653"
+    },
+    {
+      "claim_id": "C11",
+      "issue_id": "access.login_failure",
+      "metric": "mean_severity",
+      "value": "3.996479"
+    }
+  ],
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "memo-v3-placeholders",
+  "recommendations": [
+    {
+      "claim_ids": [
+        "C1",
+        "C3"
+      ],
+      "rationale": "Mean severity is 3.586788 [C3] across 2846 [C1] complaints; monitor it as the lead playback indicator.",
+      "title": "Track playback.general severity"
+    },
+    {
+      "claim_ids": [
+        "C4"
+      ],
+      "rationale": "The largest bucket has 13743 [C4] complaints and needs finer classification so its themes become actionable.",
+      "title": "Split other.general"
+    },
+    {
+      "claim_ids": [],
+      "rationale": "17793 records need review; display this next to every metric.",
+      "title": "Show needs-review backlog"
+    }
+  ],
+  "recommended_area": "playback",
+  "request_id": "req_011Cg7GRxFMv7CrgjuTtZmim"
+}

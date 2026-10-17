@@ -1,0 +1,340 @@
+{
+  "disagreements": [
+    {
+      "enricher": [
+        "playback",
+        "praise",
+        3
+      ],
+      "review_id": "bf62b3ad-de86-4504-b945-a2c331beb9bf",
+      "text": "This is my favorite app to use when listening to music they're is a lot of glitches when I go out of Spotify and go play a game but it's a 50/50 when it glitches sometimes it never does sometimes it does I recommend downloading ❤",
+      "verifier": [
+        "playback",
+        "praise",
+        1
+      ]
+    },
+    {
+      "enricher": [
+        "usability",
+        "request",
+        2
+      ],
+      "review_id": "3352112b-a49f-4baa-b332-6be416f67995",
+      "text": "Latest updates seem to have fixed glitches. Now just rid of Rogan and I'll move this to five stars.",
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ]
+    },
+    {
+      "enricher": [
+        "billing",
+        "request",
+        1
+      ],
+      "review_id": "9752b216-adfb-4613-a42e-14358165da60",
+      "text": "Make this app paid only already.",
+      "verifier": [
+        "other",
+        "request",
+        1
+      ]
+    },
+    {
+      "enricher": [
+        "usability",
+        "complaint",
+        2
+      ],
+      "review_id": "5b7f65f9-7f6f-471e-aea1-ce01346dc494",
+      "text": "Hey guys, when I open a podcast on mobile where all the episodes are ordered vertically I see a little problem. I want to scroll down the list to see previous episodes, and sometimes screen swipes right to open a \"More Like This\" window. First of all, I don't want that window and recommendations suc",
+      "verifier": [
+        "usability",
+        "request",
+        2
+      ]
+    },
+    {
+      "enricher": [
+        "other",
+        "request",
+        1
+      ],
+      "review_id": "52ee6e0d-a242-45dd-936f-3e3b372e1f0e",
+      "text": "need in my life",
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ]
+    },
+    {
+      "enricher": [
+        "usability",
+        "complaint",
+        4
+      ],
+      "review_id": "709b1d34-0f02-471d-a329-914f24074961",
+      "text": "Not a fan of it. Design doesn't look as good as Apple's. 5 skips in the free version is just mean to be brutally honest. When I try to open an album... it doesn't open, instead it opens something wierd and I hate that. Then I try to play a song from that album... and it ends up playing a random song",
+      "verifier": [
+        "playback",
+        "complaint",
+        4
+      ]
+    },
+    {
+      "enricher": [
+        "usability",
+        "complaint",
+        3
+      ],
+      "review_id": "ba6de95b-eb42-4794-ac3d-7f4eda49a5af",
+      "text": "I make a playlist and it will play through normally on my computer but on my phone it will just randomly play music NOT in my playlist. Makes it hard to go to sleep when I can't listen to the music I want to fall asleep to.",
+      "verifier": [
+        "playback",
+        "complaint",
+        3
+      ]
+    },
+    {
+      "enricher": [
+        "other",
+        "praise",
+        1
+      ],
+      "review_id": "f567be19-9981-4eb5-a3cd-507e1c2746d2",
+      "text": "It so good it works so fast",
+      "verifier": [
+        "playback",
+        "praise",
+        1
+      ]
+    },
+    {
+      "enricher": [
+        "billing",
+        "complaint",
+        4
+      ],
+      "review_id": "f8ccf2a4-90f6-4303-ad59-0ad13faa8c83",
+      "text": "I loved this app but now it's taking our basic rights we can't even go back to our favourite song to listen again I once Loved this app but now it's like a money grabber.",
+      "verifier": [
+        "usability",
+        "complaint",
+        3
+      ]
+    },
+    {
+      "enricher": [
+        "playback",
+        "complaint",
+        4
+      ],
+      "review_id": "3462d327-3249-461e-b007-1d0e09b3be00",
+      "text": "Why can't we play back the time? Why pay?",
+      "verifier": [
+        "usability",
+        "request",
+        2
+      ]
+    },
+    {
+      "enricher": [
+        "usability",
+        "praise",
+        1
+      ],
+      "review_id": "59094eee-0941-4c2d-9cc0-f6d1227b7ced",
+      "text": "The best streaming platform. Easy to use and gives what you want",
+      "verifier": [
+        "other",
+        "praise",
+        1
+      ]
+    },
+    {
+      "enricher": [
+        "billing",
+        "complaint",
+        2
+      ],
+      "review_id": "bcf6b061-b85d-411f-856c-d17ea0e70458",
+      "text": "Vraiment un scandale de payer aussi cher pour une app aussi mal fichue et pleine de bug 🥲 et que ce soit sur android, IOS or desktop c'est pareil.",
+      "verifier": [
+        "playback",
+        "complaint",
+        3
+      ]
+    },
+    {
+      "enricher": [
+        "usability",
+        "complaint",
+        3
+      ],
+      "review_id": "1aa499c4-1145-403f-9c90-aa086b92e1ec",
+      "text": "why did you remove the shuffle button cuz when I press it, it just pauses like what the heck, you guys suck",
+      "verifier": [
+        "playback",
+        "complaint",
+        3
+      ]
+    },
+    {
+      "enricher": [
+        "other",
+        "cancellation",
+        2
+      ],
+      "review_id": "c0bd07d3-9ec7-42cb-8811-f8ede24a6bb7",
+      "text": "It's getting worser and worser after every update.. Done with it",
+      "verifier": [
+        "other",
+        "complaint",
+        2
+      ]
+    },
+    {
+      "enricher": [
+        "usability",
+        "request",
+        4
+      ],
+      "review_id": "ea6e6004-e420-4998-b2f1-beeb961a803d",
+      "text": "It's not playing what I want to play it say tomorrow please remove the tomorrow thing because I can't play any song I want and I hate it pls remove it",
+      "verifier": [
+        "playback",
+        "complaint",
+        4
+      ]
+    },
+    {
+      "enricher": [
+        "catalog",
+        "complaint",
+        4
+      ],
+      "review_id": "67b210a0-7a9c-4ef5-ab75-06ed9bf7bb4d",
+      "text": "Songs are disappeared",
+      "verifier": [
+        "downloads",
+        "complaint",
+        3
+      ]
+    },
+    {
+      "enricher": [
+        "downloads",
+        "cancellation",
+        3
+      ],
+      "review_id": "e89ed60a-b50f-4e8b-90f4-3012ac98bc9a",
+      "text": "Works ok. Doesn't play downloaded songs often without signal which is pointless. Also, guys...WE NEED A FREAKING ARTIST TAB! it's so annoying to have to try to find what song I want by album because I usually don't know the album or can't remember which album the song is on. I'm seriously considerin",
+      "verifier": [
+        "downloads",
+        "complaint",
+        3
+      ]
+    },
+    {
+      "enricher": [
+        "other",
+        "complaint",
+        2
+      ],
+      "review_id": "a841fa5f-b7e7-442a-8776-b6e042b051d1",
+      "text": "Harmful",
+      "verifier": [
+        "other",
+        "unclear",
+        2
+      ]
+    },
+    {
+      "enricher": [
+        "usability",
+        "complaint",
+        3
+      ],
+      "review_id": "79bfe0dc-2854-4cbd-b6a0-a89936f2a14f",
+      "text": "Was the BEST app all the way back in 2019 now you can't even go to a specific length of a song , probably the downfall of Spotify now",
+      "verifier": [
+        "playback",
+        "complaint",
+        2
+      ]
+    },
+    {
+      "enricher": [
+        "usability",
+        "complaint",
+        3
+      ],
+      "review_id": "c283aa22-1897-41e2-96cf-6d3497ab7b3f",
+      "text": "Recent updates are sick! Can't replay or go back nor skip to a particular portion of the song. Such a disappointment.",
+      "verifier": [
+        "playback",
+        "complaint",
+        3
+      ]
+    },
+    {
+      "enricher": [
+        "usability",
+        "praise",
+        1
+      ],
+      "review_id": "45a8c903-7b98-4d2e-97e8-124b565506a9",
+      "text": "Its simpler and has all nice music",
+      "verifier": [
+        "catalog",
+        "praise",
+        1
+      ]
+    },
+    {
+      "enricher": [
+        "other",
+        "praise",
+        1
+      ],
+      "review_id": "670142bb-8ca3-41e3-a07d-891051cb6b06",
+      "text": "Made everything premium",
+      "verifier": [
+        "billing",
+        "complaint",
+        2
+      ]
+    }
+  ],
+  "intent_agreement": 0.8929,
+  "model": "claude-haiku-4-5",
+  "prompt_version": "verify-v1",
+  "sample_fraction_declared": 0.01,
+  "sample_size": 84,
+  "severity_exact_agreement": 0.8571,
+  "severity_mae": 0.1667,
+  "topic_agreement": 0.8095,
+  "topic_confusion_enricher_vs_verifier": {
+    "access->access": 3,
+    "billing->billing": 6,
+    "billing->other": 1,
+    "billing->playback": 1,
+    "billing->usability": 1,
+    "catalog->catalog": 2,
+    "catalog->downloads": 1,
+    "downloads->downloads": 2,
+    "other->billing": 1,
+    "other->other": 37,
+    "other->playback": 1,
+    "playback->playback": 9,
+    "playback->usability": 1,
+    "support->support": 1,
+    "usability->catalog": 1,
+    "usability->other": 2,
+    "usability->playback": 6,
+    "usability->usability": 8
+  }
+}
