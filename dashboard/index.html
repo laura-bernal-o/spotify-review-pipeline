@@ -33,6 +33,27 @@ body { margin: 0; background: var(--surface-0); color: var(--text-primary);
   font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
 main { max-width: 1120px; margin: 0 auto; padding: 24px 16px 64px; }
 h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
+.hero { position: relative; overflow: hidden; border: 1px solid var(--border); border-radius: 16px;
+  padding: 28px 28px 24px; margin-bottom: 16px;
+  background:
+    radial-gradient(120% 140% at 100% 0%, color-mix(in srgb, var(--series-1) 22%, transparent) 0%, transparent 55%),
+    radial-gradient(90% 120% at 0% 100%, color-mix(in srgb, var(--series-1) 10%, transparent) 0%, transparent 60%),
+    var(--surface-1); }
+.hero::after { content: ""; position: absolute; right: -40px; top: -40px; width: 220px; height: 220px; border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--series-1) 30%, transparent); pointer-events: none; }
+.hero .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 10px; }
+.hero .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--series-1);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--series-1) 25%, transparent); }
+.hero h1 { font-size: clamp(28px, 4.2vw, 40px); line-height: 1.12; font-weight: 750; letter-spacing: -0.025em;
+  margin: 0 0 10px; max-width: 760px; }
+.hero h1 .accent { color: var(--accent-ink); }
+.hero .sub { max-width: 720px; margin-bottom: 16px; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { font-size: 13px; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface-1) 70%, transparent); color: var(--text-secondary); }
+.pill.strong { background: var(--series-1-soft); border-color: var(--series-1); color: var(--text-primary); font-weight: 650; }
+@media (max-width: 600px) { .hero { padding: 20px 16px 18px; } .hero::after { display: none; } }
 h2 { font-size: 17px; margin: 0 0 12px; }
 .sub { color: var(--text-secondary); margin: 0 0 20px; }
 .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin-bottom: 16px; }
@@ -72,9 +93,18 @@ code { font-size: 12px; }
 </head>
 <body>
 <main>
-  <h1>Where should Spotify focus next quarter?</h1>
-  <p class="sub">Evidence from historical Google Play reviews (May 2022 – Nov 2023), classified by a multi-agent pipeline.
-    Every number comes from the database; click any issue or claim to see the reviews behind it.</p>
+  <header class="hero">
+    <div class="eyebrow"><span class="pulse" aria-hidden="true"></span>Product priority analysis · Google Play reviews</div>
+    <h1>Where should Spotify focus <span class="accent">next quarter</span>?</h1>
+    <p class="sub">Evidence from historical app reviews, classified by a multi-agent pipeline. Every number comes from the
+      database; click any issue or claim to see the reviews behind it.</p>
+    <div class="pills" id="heropills">
+      <span class="pill">May 2022 – Nov 2023</span>
+      <span class="pill" id="pill-scope">Loading…</span>
+      <span class="pill strong" id="pill-rec" hidden></span>
+      <span class="pill" id="pill-models" hidden></span>
+    </div>
+  </header>
   <div id="err" class="warn" hidden></div>
 
   <div class="tiles" id="tiles"></div>
@@ -237,6 +267,12 @@ async function trace(id) {
     $("tiles").innerHTML = tiles.map(([val, k]) => `<div class="tile"><div class="v">${val}</div><div class="k">${esc(k)}</div></div>`).join("");
 
     $("area").textContent = String(info.recommended_area || "").replace("_", " / ");
+    $("pill-scope").textContent = `${fmt(m.classified_in_scope)} of ${fmt(m.source_rows)} reviews classified`;
+    $("pill-rec").textContent = "Recommendation: " + String(info.recommended_area || "").replace("_", " / ");
+    $("pill-rec").hidden = !info.recommended_area;
+    const models = info.run && info.run.claude_models ? [info.run.jev_model, ...new Set(Object.values(info.run.claude_models))] : [];
+    $("pill-models").textContent = models.filter(Boolean).join(" · ");
+    $("pill-models").hidden = !models.length;
     const claimById = Object.fromEntries(s.claims.map((c) => [c.claim_id, c]));
     $("recs").innerHTML = s.recommendations.map((r) => `<div class="rec"><b>${esc(r.title)}</b>${esc(r.rationale)}<div>${
       r.claim_ids.map((c) => claimById[c] ? `<button class="chip" data-issue="${esc(claimById[c].issue_id)}">${esc(c)}: ${esc(claimById[c].metric)} ${esc(claimById[c].value)}</button>` : "").join("")}</div></div>`).join("");
